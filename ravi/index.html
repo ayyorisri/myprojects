@@ -13,7 +13,9 @@
     <link href="dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="style.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">    
+    <link href="dist/slick/slick-theme.css" rel="stylesheet">
+    <link href="dist/slick/slick.css" rel="stylesheet">
   </head>
 
   <body>
@@ -61,11 +63,22 @@
         </div>
       </div>
     </header>
-      <main role="main">
+      <main role="main" class="main">
         <div class="container">
-          <div class="slider">
-            
-          </div>
+          <section class="variable slider">
+            <div>
+              <img src="images/slide-1.jpg">
+            </div>
+            <div>
+              <img src="images/slide-2.jpg">
+            </div>
+            <div>
+              <img src="images/slide-3.jpg">
+            </div>
+            <div>
+              <img src="images/slide-4.jpg">
+            </div>            
+          </section>
         </div>
       </main>
  
@@ -77,5 +90,14 @@
     <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
     <script src="assets/js/vendor/popper.min.js"></script>
     <script src="dist/js/bootstrap.min.js"></script>
+    <script src="dist/slick/slick.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $(".variable").slick({
+          dots: true,
+          infinite: true
+        });
+      })
+    </script>
   </body>
 </html>
