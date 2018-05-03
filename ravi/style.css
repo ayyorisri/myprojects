@@ -266,3 +266,31 @@ footer ul li h4, .site-bottom-2 h4{
     -ms-transform: scale(1.075);
     transform: scale(1.075);
 }
+.tab-wrapper{
+
+}
+.tab-wrapper .tab-list{
+	float: left;
+	padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+.tab-wrapper .tab-list li a{
+	display: block;
+    padding: 15px 20px;
+    padding-right: 75px;
+    margin-right: 0;
+    font-weight: 400;
+    color: rgba(98,98,98,.7);
+    font-size: 12px;
+    min-width: 70px;
+    text-transform: uppercase;
+}
+.tab-wrapper .tab-list li{
+	display: block;
+}
+.tab-wrapper .tab-content{
+	overflow: hidden;
+    padding: 15px;
+    border-left: 1px solid rgba(0,0,0,.1);
+}
