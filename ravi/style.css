@@ -34,7 +34,7 @@ h1, h2, h3, h4, h5, h6{
 }
 .navbar-light{
 	background-color: #4a5063;
-	margin-top: -15px;
+	margin-top: -10px;
 	position: absolute;
     width: calc(100% - 20px);
 }
@@ -45,7 +45,7 @@ h1, h2, h3, h4, h5, h6{
 .slider{
 	/*min-height: 500px;*/
 	background: #ffffff;
-	margin-top: -15px;
+	margin-top: -10px;
 	position: relative;
 }
 .navbar{
@@ -111,7 +111,7 @@ section{
 	max-width: 100%;
 }
 .grid{
-	margin: 0 15px 20px 15px;
+	margin: 0 15px 10px 15px;
 	padding-bottom: 30px;
 	border-bottom: solid 2px rgba(210, 215, 217, 0.75);
 }
@@ -154,7 +154,7 @@ section{
 footer{
 	position: relative;
     height: 348px;
-    margin-top: 20px;
+    margin-top: 10px;
     background: #4a5063;
 }
 .footer-main{
@@ -162,7 +162,7 @@ footer{
     width: 100%;
 }
 .footer-main .footer-inner{
-	margin-top: -20px;
+	margin-top: -10px;
 	background: #4a5063;
 	color: #ffffff;
 	padding-top: 20px;
