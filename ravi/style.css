@@ -294,3 +294,50 @@ footer ul li h4, .site-bottom-2 h4{
     padding: 15px;
     border-left: 1px solid rgba(0,0,0,.1);
 }
+.social-icons{
+	text-align: right;
+}
+.social-icons ul{
+	padding: 0;
+	margin-bottom: 0;
+	margin-right: 20px;
+	display: table;
+}
+.social-icons ul li{
+	float: left;
+	list-style: none;
+	margin-right: 5px;
+}
+.social-icons ul li a{
+	display: block;
+	width: 40px;
+    height: 40px;
+    text-align: center;
+    padding-top: 8px;
+    border: 1px solid #000;
+    border-radius: 50%;
+}
+.social-icons ul li a .fa{
+	font-size: 25px;
+}
+.social-icons .fa-facebook{
+	color: #3B5998;
+}
+.social-icons .fa-twitter{
+	color: #00aced;
+}
+.social-icons .fa-youtube{
+	color: #ff0000;
+}
+.social-icons ul li a:hover .fa{
+	color: #ffffff;
+}
+.social-icons ul li a.facebook:hover {
+	background: #3B5998;
+}
+.social-icons ul li a.twitter:hover {
+	background: #00aced;
+}
+.social-icons ul li a.youtube:hover {
+	background: #ff0000;
+}
