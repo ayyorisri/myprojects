@@ -15,7 +15,8 @@ h1, h2, h3, h4, h5, h6{
 	color: #3d4449;
 }
 .logo{
-	padding: 30px 0 45px 0;
+	padding: 15px 0 20px 0;
+	background: #ffffff;
 }
 .container{
 	width: 1200px;
@@ -23,8 +24,12 @@ h1, h2, h3, h4, h5, h6{
     padding-left: 10px;
     padding-right: 10px;
 }
-.logo{
-	background: #ffffff;
+.logo a {
+	display: inline-block;
+	padding-top: 5px;
+}
+.logo a img{
+	width: 200px;
 }
 .header-top{
 	background: #ffffff;
@@ -310,6 +315,7 @@ footer ul li h4, .site-bottom-2 h4{
 }
 .social-icons ul li a{
 	display: block;
+	position: relative;
 	width: 40px;
     height: 40px;
     text-align: center;
@@ -317,8 +323,32 @@ footer ul li h4, .site-bottom-2 h4{
     border: 1px solid #000;
     border-radius: 50%;
 }
+.social-icons ul li a:before{
+	content: '';
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	height: 0;
+	border-radius: 50%;
+	-webkit-transition: height 0.5s; /* For Safari 3.1 to 6.0 */
+    transition: height 0.5s;
+}
+.social-icons ul li a.facebook:before{
+	background: #3B5998;
+}
+.social-icons ul li a.twitter:before{
+	background: #00aced;
+}
+.social-icons ul li a.youtube:before{
+	background: #ff0000;
+}
+.social-icons ul li a:hover:before{
+	height: 100%;
+}
 .social-icons ul li a .fa{
 	font-size: 25px;
+	position: relative;
 }
 .social-icons .fa-facebook{
 	color: #3B5998;
@@ -332,7 +362,7 @@ footer ul li h4, .site-bottom-2 h4{
 .social-icons ul li a:hover .fa{
 	color: #ffffff;
 }
-.social-icons ul li a.facebook:hover {
+/*.social-icons ul li a.facebook:hover {
 	background: #3B5998;
 }
 .social-icons ul li a.twitter:hover {
@@ -340,4 +370,7 @@ footer ul li h4, .site-bottom-2 h4{
 }
 .social-icons ul li a.youtube:hover {
 	background: #ff0000;
+}*/
+.slick-dotted.slick-slider {
+    margin-bottom: 27px;
 }
