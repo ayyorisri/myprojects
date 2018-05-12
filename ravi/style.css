@@ -15,7 +15,7 @@ h1, h2, h3, h4, h5, h6{
 	color: #3d4449;
 }
 .logo{
-	padding: 15px 0 20px 0;
+	padding: 5px 0 20px 0;
 	background: #ffffff;
 }
 .container{
@@ -24,12 +24,16 @@ h1, h2, h3, h4, h5, h6{
     padding-left: 10px;
     padding-right: 10px;
 }
-.logo a {
+.logo .logo-img {
 	display: inline-block;
-	padding-top: 5px;
+	padding-left: 15px;
+}
+.logo a {
+    display: inline-block;
+    padding-top: 5px;
 }
 .logo a img{
-	width: 200px;
+	width: 140px;
 }
 .header-top{
 	background: #ffffff;
@@ -301,6 +305,7 @@ footer ul li h4, .site-bottom-2 h4{
 }
 .social-icons{
 	text-align: right;
+    padding-top: 15px;
 }
 .social-icons ul{
 	padding: 0;
