@@ -2,7 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="images/favicon.ico">
@@ -10,17 +11,17 @@
     <title>EduZone Services</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="style.css" rel="stylesheet">
-	<link href="contact-us.css" rel="stylesheet">
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet"> 
     <link href="dist/slick/slick-theme.css" rel="stylesheet">
     <link href="dist/slick/slick.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed" rel="stylesheet">
     <!-- <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="assets/js/ie-emulation-modes-warning.js"></script>
+    <!-- Custom styles for this template -->
+    <link href="style.css" rel="stylesheet">   
   </head>
 
   <body>
@@ -48,11 +49,13 @@
       <div class="header-bott">
         <div class="container">
           <nav class="navbar navbar-expand-lg navbar-light">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler" type="button">                
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>                
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarsExample09">
+            <div class="collapse navbar-collapse">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
                   <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
@@ -60,8 +63,14 @@
                 <li class="nav-item">
                   <a class="nav-link" href="about-us.html">About Us</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item dropdown">
                   <a class="nav-link" href="services.html">Services</a>
+                  <ul class="dropdown-list">
+                    <li><a class="nav-link" href="study-in-abroad.html">Study in Abroad</a></li>
+                    <li><a class="nav-link" href="Settle-in-abroad.html">Settle in Abroad</a></li>
+                    <li><a class="nav-link" href="Work-in-abroad.html">Work in Abroad</a></li>
+                    <li><a class="nav-link" href="Visit-abroad.html">Visit Abroad</a></li>
+                  </ul>
                 </li>
                 <li class="nav-item active">
                   <a class="nav-link" href="contact-us.html">Contact Us</a>
@@ -175,21 +184,14 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-    <script src="assets/js/vendor/popper.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="dist/js/bootstrap.min.js"></script>
-    <script>
-		function myMap() {
-		var mapProp= {
-		    center:new google.maps.LatLng(51.508742,-0.120850),
-		    zoom:5,
-		};
-		var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
-		}
-	</script>
-
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+    <script src="dist/slick/slick.js" type="text/javascript" charset="utf-8"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="assets/js/vendor/holder.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
 <!-- https://html5up.net/editorial
