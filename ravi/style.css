@@ -14,12 +14,40 @@ p{
 h1, h2, h3, h4, h5, h6{
 	color: #3d4449;
 }
+.navbar-toggler {
+    display: none;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
 .logo{
 	padding: 5px 0 20px 0;
 	background: #ffffff;
 }
+.navbar-collapse>ul{
+    list-style: none;
+    padding-left: 0;
+}
 .container{
-	width: 1200px;
+	/*width: 1200px;*/
     background: rgba(0,0,0,.07);
     padding-left: 10px;
     padding-right: 10px;
@@ -59,15 +87,22 @@ h1, h2, h3, h4, h5, h6{
 }
 .navbar{
 	padding: 0;
+    border: 0;
+    margin-bottom: 0;
+    border-radius: 0;
 }
 .navbar-light .navbar-nav .nav-item{
-	padding: 5px 5px;
+	padding: 8px 5px;
 }
 .navbar-light .navbar-nav .nav-item .nav-link{
+    display: block;
 	color: #ffffff;
 	padding: 10px 20px;
 	position: relative;
 	text-transform: uppercase;
+}
+.navbar-light .navbar-nav .nav-item .nav-link:hover{
+    text-decoration: none;
 }
 .navbar-light .navbar-nav .nav-item .nav-link:after{
 	position: absolute;
@@ -403,7 +438,10 @@ footer ul li h4, .site-bottom-2 h4{
 }
 
 @media(max-width: 991px){
-   .navbar-collapse{
+   
+}
+@media (max-width: 767px){
+    .navbar-collapse{
         display: block;
         background: #fff;
         position: relative;
@@ -434,8 +472,11 @@ footer ul li h4, .site-bottom-2 h4{
         font-size: 45px;
         line-height: 26px;
     }
-}
-@media (max-width: 767px){
+    .navbar-toggler{
+        display: block;
+        background: transparent;
+        border: 0;
+    }
     .container {
         width: 100% !important;
         max-width: 100%;
