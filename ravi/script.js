@@ -11,5 +11,5 @@ $(document).ready(function(){
 	  e.preventDefault();
 	  $(this).toggleClass('open');
 	  $(this).children('.dropdown-list').slideToggle();
-  })
+  }) 
 })
