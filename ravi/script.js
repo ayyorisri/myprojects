@@ -1,7 +1,8 @@
 $(document).ready(function(){
 	$(".variable").slick({
 	  dots: true,
-	  infinite: true
+	  infinite: true,
+	  autoplay:true
 	});
   $('.navbar-toggler').click(function(){
 	   $(this).toggleClass("change");
