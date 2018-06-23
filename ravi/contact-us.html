@@ -1,3 +1,23 @@
+<?php 
+  if(isset($_POST['submit'])){
+      $to = "srinu.ayyori@gmail.com"; 
+      $from = $_POST['email']; 
+      $name = $_POST['name'];
+      $mobile = $_POST['mobile'];
+      $subject = $_POST['subject'];
+      $subject2 = "Copy of your form submission";
+      $message = $name . " " . $mobile . " wrote the following:" . "\n\n" . $_POST['message'];
+      $message2 = "Here is a copy of your message " . $name . "\n\n" . $_POST['message'];
+
+      $headers = "From:" . $from;
+      $headers2 = "From:" . $to;
+      mail($to,$subject,$message,$headers);
+      mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
+      echo "Mail Sent. Thank you " . $name . ", we will contact you shortly.";
+      // You can also use header('Location: thank_you.php'); to redirect to another page.
+    }
+?>
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -84,41 +104,41 @@
     </header>
       <main role="main" class="main">
         <div class="container">
-			<div class="contact-us">
-				<h1>Submit Your Qwery</h1>
-				<form class="cf">
-				  <div class="half left cf">
-					<input type="text" id="input-name" placeholder="Name" required>
-					<input type="email" id="input-email" placeholder="Email address" required>
-					<input type="text" id="input-mobile" placeholder="Mobile" required>
-				  </div>
-				  <div class="half right cf">
-				  	<input type="text" id="input-subject" placeholder="Subject" required>
-					<textarea name="message" type="text" id="input-message" placeholder="Message" required></textarea>
-				  </div>
-				  <input type="submit" value="Submit" id="input-submit">
-				</form>
-			</div>
-			<div class="map">
-				<div class="row">
-					<div class="col-lg-6">
-						<address class="vcard text-center">
-						   <div class="adr">
-						      <div class="addr">Karlstraße 120</div>
-						      <div class="addr">Düsseldorf</div > 
-						      <div class="addr">D-40210</div >
-						      <div class="addr">Germany</div >
-						      <div class="addr">Tel: +49 1234 5678</div>
-						      <div class="addr">Fax: <span class="fax">+49 1234 5679</span></div>
-						   </div>						  
-						</address>
-					</div>
-					<div class="col-lg-6">
-						<div id="googleMap" style="width:100%;height:300px;"></div>
-					</div>
-				</div>
-			</div>
-		</div>
+    			<div class="contact-us">
+    				<h1>Submit Your Qwery</h1>
+    			<form method="post" enctype="multipart/form-data" action="">
+    				  <div class="half left cf">
+    					<input type="text" id="input-name" placeholder="Name" required>
+    					<input type="email" id="input-email" placeholder="Email address" required>
+    					<input type="text" id="input-mobile" placeholder="Mobile" required>
+    				  </div>
+    				  <div class="half right cf">
+    				  	<input type="text" id="input-subject" placeholder="Subject" required>
+    					<textarea name="input-message" type="text" id="input-message" placeholder="Message" required></textarea>
+    				  </div>
+    				  <input type="submit" value="Submit" id="input-submit">
+    				</form>
+    			</div>
+    			<div class="map">
+    				<div class="row">
+    					<div class="col-lg-6">
+    						<address class="vcard text-center">
+    						   <div class="adr">
+    						      <div class="addr">Karlstraße 120</div>
+    						      <div class="addr">Düsseldorf</div > 
+    						      <div class="addr">D-40210</div >
+    						      <div class="addr">Germany</div >
+    						      <div class="addr">Tel: +49 1234 5678</div>
+    						      <div class="addr">Fax: <span class="fax">+49 1234 5679</span></div>
+    						   </div>						  
+    						</address>
+    					</div>
+    					<div class="col-lg-6">
+    						<div id="googleMap" style="width:100%;height:300px;"></div>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
       </main>
       <footer>
         <div class="footer-main">

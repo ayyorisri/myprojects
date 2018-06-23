@@ -324,21 +324,42 @@ footer ul li h4, .site-bottom-2 h4{
 .tab-wrapper .tab-list li a{
 	display: block;
     padding: 15px 20px;
-    padding-right: 75px;
+    padding-right: 30px;
     margin-right: 0;
     font-weight: 400;
     color: rgba(98,98,98,.7);
     font-size: 12px;
     min-width: 70px;
     text-transform: uppercase;
+    position: relative;
+}
+.tab-wrapper .tab-list li:first-child a.active{
+    border-top: 0;
+}
+.tab-wrapper .tab-list li a.active{
+    border-bottom: 1px solid #f56a6a;
+    border-top: 1px solid #f56a6a;
+    color: #f56a6a;
+    font-size: 14px;
+}
+.tab-wrapper .tab-list li a.active:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-left: 15px solid #f56a6a;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-right: 0;
+    margin-right: -14px;
 }
 .tab-wrapper .tab-list li{
 	display: block;
 }
 .tab-wrapper .tab-content{
 	overflow: hidden;
-    padding: 15px;
-    border-left: 1px solid rgba(0,0,0,.1);
+    padding: 15px 15px 15px 30px;
+    /*border-left: 1px solid rgba(0,0,0,.1);*/
 }
 .social-icons{
 	text-align: right;
@@ -431,6 +452,7 @@ footer ul li h4, .site-bottom-2 h4{
     width: 200px;
     padding-left: 0;
     background: #4a5063;
+	list-style: none;
 }
 .dropdown:hover>.dropdown-list{
     display: block;
