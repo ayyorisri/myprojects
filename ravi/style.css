@@ -457,6 +457,9 @@ footer ul li h4, .site-bottom-2 h4{
 .dropdown:hover>.dropdown-list{
     display: block;
 }
+.vcard{
+    padding-left: 25px;
+}
 
 @media(max-width: 991px){
    
@@ -501,6 +504,7 @@ footer ul li h4, .site-bottom-2 h4{
     .container {
         width: 100% !important;
         max-width: 100%;
+        background: #ffffff;
     }
     .dropdown .dropdown-list{
         position: static;
@@ -516,5 +520,17 @@ footer ul li h4, .site-bottom-2 h4{
     }
     .dropdown:hover>.dropdown-list{
         display: none;
+    }
+    .header-bott, footer{
+        background: transparent;
+    }
+    .footer-main .container{
+        background: #4a5063;
+    }
+    .footer-main .footer-inner{
+        margin-top: 0;
+    }
+    .vcard{
+        text-align: center;
     }
 }
